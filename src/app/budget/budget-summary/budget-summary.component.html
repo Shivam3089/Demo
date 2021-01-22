@@ -1,0 +1,47 @@
+<h2>Budget Summary</h2>
+
+<div class="main">
+    <label class="labels">Id</label>
+    <div class="attributeValue">
+        <span>{{budget?.id}}</span>
+    </div>
+</div>
+
+<div class="main">
+    <label class="labels">Name</label>
+    <div class="attributeValue">
+        <span>{{budget?.name}}</span>
+    </div>
+</div>
+
+<div class="main">
+    <label class="labels">Last Modified On</label>
+    <div class="attributeValue">
+        <span>{{budget?.last_modified_on | date:'dd/mm/yyyy'}}</span>
+    </div>
+</div>
+
+<div class="main">
+    <label class="labels">First Month</label>
+    <div class="attributeValue">
+        <span>{{budget?.first_month}}</span>
+    </div>
+</div>
+
+<div class="main">
+    <label style="float:left;">Last Month</label>
+    <div class="attributeValue">
+        <span>{{budget?.last_month}}</span>
+    </div>
+</div>
+
+<div class="main">
+    <label style="float:left;">View Accounts</label>
+    <div class="attributeValue">
+        <span><a href="javascript:void(0);" (click)="showAccount(budget.id)">Account</a></span>
+    </div>
+</div>
+
+<div class="main">
+    <button (click)="back()">Back</button>
+</div>

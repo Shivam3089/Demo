@@ -1,0 +1,19 @@
+<h2>Create Account</h2>
+<form [formGroup]="accountForm" (ngSubmit)="saveAccount()">
+    <label>
+      Name:
+      <input type="text" formControlName="name" required>
+    </label>
+  
+    <label>
+        Type:
+        <input type="text" formControlName="type" required>
+      </label>
+    <label>
+      Balance:
+      <input type="text" formControlName="balance">
+    </label>
+    <button class="margins" type="submit" [disabled]="!accountForm.valid">Submit</button>
+
+    <button (click)="cancelAccount()">Cancel</button>
+  </form>

@@ -1,0 +1,46 @@
+<h2>Account Summary</h2>
+
+<div class="main">
+    <label class="labels">Id</label>
+    <div class="attributeValue">
+        <span>{{account?.id}}</span>
+    </div>
+</div>
+
+<div class="main">
+    <label class="labels">Name</label>
+    <div class="attributeValue">
+        <span>{{account?.name}}</span>
+    </div>
+</div>
+
+<div class="main">
+    <label class="labels">Tranfer Payee ID</label>
+    <div class="attributeValue">
+        <span>{{account?.transfer_payee_id}}</span>
+    </div>
+</div>
+
+<div class="main">
+    <label class="labels">Balance</label>
+    <div class="attributeValue">
+        <span>{{account?.balance}}</span>
+    </div>
+</div>
+
+<div class="main">
+    <label class="labels">Cleared Balance</label>
+    <div class="attributeValue">
+        <span>{{account?.cleared_balance}}</span>
+    </div>
+</div>
+
+<div class="main">
+    <label style="float:left;">Uncleared Balance</label>
+    <div class="attributeValue">
+        <span>{{account?.uncleared_balance}}</span>
+    </div>
+</div>
+<div class="main">
+    <button (click)="back()">Back</button>
+</div>

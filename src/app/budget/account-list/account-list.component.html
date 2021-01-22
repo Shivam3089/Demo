@@ -1,0 +1,36 @@
+<h2>Account List</h2>
+ <table class="table">
+    <thead>
+        <tr>
+            <th scope="">ID</th>
+            <th scope="">Name</th>
+            <th scope="" [appSort]="account" data-order="asc" data-name="balance">Balance</th>
+            <th scope="">Clear Balance</th>
+            <th scope="">Unclear Balance</th>
+            <th scope="">Note</th>
+            <th scope="">Tranfer Payee Id</th>
+            <th scope="">Summary</th>
+        </tr>
+    </thead>
+    <tbody>
+        <ng-container *ngFor="let data of account">
+
+            <tr class="pointer" *ngIf="!data.deleted">
+                <td class="textAlign">{{data?.id}}</td>
+                <td class="textAlign">{{data?.name}}</td>
+                <td class="textAlign">{{data?.balance}}</td>
+                <td class="textAlign">{{data?.cleared_balance}}</td>
+                <td class="textAlign">{{data?.uncleared_balance}}</td>
+                <td class="textAlign">{{data?.note}}</td>
+                <td class="textAlign">{{data?.transfer_payee_id}}</td>
+                <td class="textAlign"><a href="javascript:void(0);" (click)="showSummary(data.id)">Summary</a></td>
+            </tr>
+        </ng-container>
+    </tbody>
+</table> 
+<div class="account">
+    <input style="font-weight: bold;" type="button" value="Add Account" (click)="addAccount()">
+</div>
+<div class="account">
+    <input  type="button" value="Back" (click)="back()">
+</div>

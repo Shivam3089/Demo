@@ -1,0 +1,39 @@
+<style>
+    .addOverflow {
+        height: 90%;
+        overflow: auto;
+        position: relative;
+    }
+
+    button.mat-icon-button.mat-mini-fab.mat-warn {
+        background: transparent;
+        box-shadow: none;
+        color: #e51c2e;
+        font-size: 20px;
+        float: right;
+        position: absolute;
+        top: 0px;
+        right: 2px;
+    }
+</style>
+<div style="min-height:95%;" class="addOverflow">
+    <div>
+        <h4 *ngIf="!data.checkForContact">{{data.html.type}}
+            <button mat-icon-button mat-mini-fab color="warn" mat-dialog-close>
+                X
+            </button>
+        </h4>
+        <h4 *ngIf="data.checkForContact">Contact Us
+            <button mat-icon-button mat-mini-fab color="warn" mat-dialog-close>
+                X
+            </button>
+        </h4>
+    </div>
+    <div>
+        <div class="content-create-cards">
+            <div>
+                <div style="white-space: pre-line;" [innerHtml]="data.html.contents"></div>
+            </div>
+        </div>
+    </div>
+</div>

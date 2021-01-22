@@ -1,0 +1,14 @@
+.main {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.attributeValue {
+    margin-left: 15px;
+    float:left;
+}
+
+.labels{
+    float: left;
+}

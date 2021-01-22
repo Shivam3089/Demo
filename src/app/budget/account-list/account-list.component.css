@@ -1,0 +1,17 @@
+.textAlign {
+    text-align: center;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.table {
+    width: 100%;
+}
+
+.account {
+    float: right;
+    margin-top: 25px;
+    margin-right: 5px;
+}

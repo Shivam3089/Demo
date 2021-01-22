@@ -1,0 +1,23 @@
+<h2>Budget List</h2>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="">ID</th>
+      <th scope="">Name</th>
+      <th scope="">Last Modified On</th>
+      <th scope="">First Month</th>
+      <th scope="">Last Month</th>
+      <th scope="">View Sumary</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="pointer" *ngFor="let data of dataSource">
+      <td class="textAlign">{{data.id}}</td>
+      <td class="textAlign">{{data.name}}</td>
+      <td class="textAlign">{{data.last_modified_on | date:'dd/MM/yyyy'}}</td>
+      <td class="textAlign">{{data.first_month | date:'dd/MM/yyyy'}}</td>
+      <td class="textAlign">{{data.last_month | date:'dd/MM/yyyy'}}</td>
+      <td class="textAlign"><a href="javascript:void(0);" (click)="showSummary(data)">Summary</a></td>
+    </tr>
+  </tbody>
+</table>

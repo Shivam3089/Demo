@@ -1,0 +1,18 @@
+.loading--on em {
+    background-color: white;
+  }
+  .body-section{padding-left: 50px;    padding-top: 20px; padding-bottom:100px; padding-right:15px;}
+  @media only screen and (max-width: 991px) {
+    .body-section {
+        padding: 0px 10px 100px ;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    
+    
+    }
+  @media only screen and (max-width: 600px) {
+    app-header {
+        width: 100%;
+    }
+    }
