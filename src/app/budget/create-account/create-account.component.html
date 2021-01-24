@@ -7,7 +7,9 @@
   
     <label>
         Type:
-        <input type="text" formControlName="type" required>
+        <select formControlName="type" required>
+          <option [value]="type" *ngFor="let type of types">{{type}}</option>
+        </select>
       </label>
     <label>
       Balance:

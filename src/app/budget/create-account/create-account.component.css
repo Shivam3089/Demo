@@ -18,6 +18,13 @@
     padding-left: .4em;
   }
 
+  select {
+    height: 2em;
+    font-size: 1em;
+    padding-left: .4em;
+    width: 208px;
+  }
+
   .margins {
       margin-right:15px;
       margin-top:15px;

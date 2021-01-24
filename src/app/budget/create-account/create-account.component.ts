@@ -11,7 +11,7 @@ import { BudgetService } from '../budget.service';
 })
 export class CreateAccountComponent implements OnInit {
 
-  
+  public types = ['checking', 'savings', 'creditCard', 'cash', 'lineOfCredit', 'carLoan'];
   accountForm = this.fb.group({
     name: ['', Validators.required],
     type: ['', Validators.required],
